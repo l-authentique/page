@@ -1,0 +1,450 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script> 
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="L'authentique - Le journal des vérités vérifiées. Par Mathilde, Eva, Clément et Alban.">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="L'Authentique">
+        <meta property="og:description" content="L'authentique - Le journal des vérités vérifiées. Par Mathilde, Eva, Clément et Alban.">
+        <meta property="og:url" content="https://oxybo45800.github.io/l-authentique/index.html">
+        <meta property="og:site_name" content="L'Authentique">
+        <meta property="og:image" content="https://oxybo45800.github.io/l-authentique/img/banniere.png">
+        <meta property="og:image:secure_url" content="https://oxybo45800.github.io/l-authentique/img/banniere.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:description" content="L'authentique - Le journal des vérités vérifiées. Par Mathilde, Eva, Clément et Alban.">
+        <meta name="twitter:title" content="L'Authentique">
+        <meta name="twitter:image" content="https://oxybo45800.github.io/l-authentique/img/banniere.png">
+        <script src="js/script.js"></script>
+        <link rel="icon" href="img/icon.png">
+        <title>L'Authentique - Le journal des v&#233rit&#233s v&#233rifi&#233es</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="body">
+        <style id="style-body"></style>
+
+<!--En tête-->
+
+        <div class="en-tete center">
+            <a href="index.html">
+                <img src="img/titre.png" class="titre">
+            </a>
+            <div>
+                <table class="tableau-tete">
+                    <td>
+                        <a href="https://twitter.com/AuthentiqueDes" target="_blank">
+                            <img src="img/5a2fe3efcc45e43754640848.png" class="icon-tete">
+                        </a>
+                        <span style="cursor:pointer;" onclick="copier(url(),'URL copié !')">
+                            <img src="img/http___liber2016.org_wp-content_uploads_2016_01_icon-link.png" title="Partagez l'URL de la page" class="icon-tete">
+                        </span>
+                    </td>
+                    <td>
+                        <a href="#accueil" onclick="accueil()" class="button" style="margin-left:10px">Accueil</a>
+                        
+                    </td>
+                    <td>
+                        <div class="theme">
+                            Derniers articles :
+                            <a href="#frames?Fake News 1.5 (dieu).html" onclick="frames('Fake%20News%201.5%20(dieu).html','yes')" class="button-theme">Politique</a>
+                            <a href="#frames?Fake news 3 Clément.html" onclick="frames('Fake%20news%203%20Clément.html','yes')" class="button-theme">TV</a>
+                            <a href="#frames?Fake%20news%202.2%20(Eva).html" onclick="frames('Fake%20news%202.2%20(Eva).html','yes')" class="button-theme">&Eacuteducation</a>
+                            <a href="#frames?Fake%20News%202.4%20(Eva).html" onclick="frames('Fake%20News%202.4%20(Eva).html','yes')" class="button-theme">Culture</a>
+                        </div>
+                    </td>
+                </table>
+            </div>
+        </div>
+
+<!--Partage input text-->
+
+        <style id="style-partage"></style>
+        <div id="partage_lien">
+
+        </div>
+        <!--
+        <div id="div-partage">
+            <div class="tete-group">
+                <div class="sous-tete-group">
+                    <a href="https://plus.google.com/u/3/113955133106119092408" target="_blank">
+                        <img src="img/google_plus_192dp.png" class="icon">
+                    </a>
+                    <a href="https://www.facebook.com/michel.journal" target="_blank">
+                        <img src="img/fb-logo.png" class="icon">
+                    </a>
+                    <a href="https://www.instagram.com/lauthentique.journal" target="_blank">
+                        <img src="img/1024px-Instagram_logo_2016.svg.png" class="icon">
+                    </a>
+                    <a href="https://discord.gg/92VujeP" target="_blank">
+                        <img src="img/887435_logo_512x512.png" class="icon">
+                    </a>
+                    <a href="mailto:lauthentique.journal@gmail.com">
+                        <img src="img/gmail.png" class="icon">
+                    </a>
+                    <span style="cursor:pointer;" onclick="partage_lien()">
+                        <img src="img/http___liber2016.org_wp-content_uploads_2016_01_icon-link.png" class="icon">
+                    </span>
+                </div>
+            </div>
+        </div>
+        -->
+        
+        
+
+<!--Frames-->
+
+        <style id="style-frames">#frames {display: none}</style>
+        <div id="frames">
+            
+        </div>
+
+
+<!--Accueil-->
+
+        <style id="style-accueil"></style>
+        <div class="accueil accueil-div">
+            <h1 class="center">
+                Actualit&#233
+            </h1>
+            <br>
+            <table class="accueil">
+                <tr onclick="frames('Fake%20News%201.5%20(dieu).html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\FakeNews Mathilde Image\emmanuelmacron.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            Rénovation du cabinet du président
+                        </h3>
+                        Ces derniers jours, notre nouveau président a rendu public la liste des personnes qui vont passer beaucoup de temps dans son cabinet ! Et sa garde rapprochée sera composée d’hommes !
+                    </td>
+                </tr>       
+                <tr onclick="frames('Fake%20news%202%20(Eva).html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\trump1.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            Révélation sur le président : Donald Trump
+                        </h3>
+                        Washington - Lors d'une conf&eacute;rence de presse, le pr&eacute;sident am&eacute;ricain Donald Trump, r&eacute;v&egrave;le son appartenance à la communaut&eacute; LGBT+.
+                    </td>
+                </tr>
+                <tr onclick="frames('Fake%20news%203%20Clément.html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\La France a un Incroyable Talent.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            Des prestations très spéciales
+                        </h3>
+                        Mardi 18 septembre, dans la célèbre émission de la France a un Incroyable Talent, un jeune homme, nommé Malik, s'est présenté devant le jury de l'émission en tant que ex-terroriste.
+                    </td>
+                </tr>
+                <tr onclick="frames('Fake%20news%202.3%20(Eva).html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\police.png" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            Un policier du XXème arrondissement finit toutes ses journées de travail à 20H!
+                        </h3>
+                        Paris, XXème arrondissement - Alors que tous les policiers mettent un point d'honneur à finir à 18H, une jeune recrue de la police finit ses journées de travail à 20H! 
+                    </td>
+                </tr>
+                <tr onclick="frames('Fake%20news%203.2%20Clément.html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\bonne-annee-2019.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            Quelques infos pour l'année 2019
+                        </h3>
+                        C'est la nouvelle année ? Vous devez être informés !
+                        Effectivement, une année de plus ! Nous avons décidé avec la rédaction de vous informer sur l'actualité de 2019.
+                    </td>
+                </tr>
+                <tr onclick="frames('Fake%20news%202.2%20(Eva).html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\lycee_monod.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            La proviseure d'un lycée refuse que des élèves boivent de l'eau !
+                        </h3>
+                        Saint-Jean-de-Braye - Alors que les élèves de terminale du lycée Jacques Monod fêtent la fin de leur année, la proviseure refuse de les laisser boire de l'eau!
+                    </td>
+                </tr>
+                <tr onclick="frames('Fake%20News%202.4%20(Eva).html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\high_school.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            Un historien découvre que Shakespeare n'a jamais écrit Roméo et Juliette!
+                        </h3>
+                        Londres Angleterre - Alors que tous les historiens se concentrent sur les zones d'ombres de l'Histoire, un ancien historien fait une découverte surprenante! 
+                    </td>
+                </tr>
+                <tr onclick="frames('Fake%20news%203.1%20Clément.html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\Fauteuil Massant.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            Du confort dans les lycées
+                        </h3>
+                        Des sièges massants pour les professeurs de lycée ? C'est prévu pour 2019 !
+                    </td>
+                </tr>
+            </table>
+            <h1 class="center">
+                Faits Divers
+            </h1>
+            <br>
+            <table class="accueil">
+                <tr onclick="frames('Fake%20News%201%20(DIEU).html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\FakeNews Mathilde Image\Image S 1.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            5 beaux sapins de Noël qui vous feront oublier la déforestation
+                        </h3>
+                        C’est prouvé : bien décorer sa maison pour Noël aide à booster son capital bonheur pour tout le mois de décembre. Mais ...
+                    </td>
+                </tr>
+                <tr onclick="frames('Fake%20news%201.3%20(dieu).html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\FakeNews Mathilde Image\Couple.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            5 pr&eacutenoms à donner à votre petit copain si il s'appelle Corentin
+                        </h3>
+                        Ça y’est, cette fois c’est sûr : vous avez un petit copain ! Il est grand, il est beau et il a une super collection de CD. Une seule ombre au tableau : il s’appelle Corentin. 
+                    </td>
+                </tr>
+                <tr onclick="frames('Fake%20News%201.4%20(toujours%20dieu).html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\FakeNews Mathilde Image\Femme.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            7 trucs vachements plus cool que la maternit&eacute
+                        </h3>
+                        Id&eacuteal pour se d&eacuteplacer sur une courte distance, le roller est le m&eacutelange id&eacuteal entre sensation forte et libert&eacute. Tout le contraire de la maternit&eacute, avec ses obligations et ses horaires fixes. Vous pouvez toujours utiliser les roues de votre poussette pour vous d&eacuteplacer, mais ...
+                    </td>
+                </tr>
+                <tr onclick="frames('Fake%20News%201.2%20(Dieu).html','yes')">
+                    <td class="td-img-accueil">
+                        <img src="img\FakeNews Mathilde Image\Enfant.jpg" class="img-accueil">
+                    </td>
+                    <td class="td-accueil">
+                        <h3>
+                            Mon enfant ne sais même pas faire un bilan comptable
+                        </h3>
+                        Arthur a beau être le premier de sa classe de CM1, il ne sait toujours pas &eacutetablir correctement le bilan comptable de mon entreprise.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+<!--Informations-->
+
+        <style id="style-infos">.infos {display: none}</style>
+        <div class="infos">
+            <div>
+                <h1>
+                    Nous contacter : 
+                </h1>
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:50%">
+                            <input type="button" value="Afficher en grand" style="position:relative;" class="boutton" onclick="popup('maps.html')">
+                            <img class="icon button-source" style="width: 20px" src="img/-content-copy_90004.png" onclick="copier('Lycée Général et Technologique Jacques Monod, 7 Rue Léon Blum, 45800 Saint-Jean-de-Braye','Adresse copiée !')">
+                            <img src="img/Capture.PNG" style="width:98%;border-radius: 10px">
+                        </td>
+                        <td style="width:100%;display: table;">
+                            <div style="vertical-align: top;width: 100%;margin-top: 40px">
+                                Notre Email : 
+                                <a href="mailto:lauthentique.journal@gmail.com">lauthentique.journal@gmail.com</a>
+                                <img style="margin-left:20px;width: 20px" onclick="copier('lauthentique.journal@gmail.com','Adresse email copiée !')" src="img/-content-copy_90004.png" class="icon">
+                                <br>
+                                Notre Twitter : 
+                                <a href="https://twitter.com/AuthentiqueDes" target="_blank" title="Nous ne postons rien, c'est juste pour le fun, ce compte !!">@AuthentiqueDes</a>
+                                <img style="margin-left:20px;width: 20px" onclick="copier('lauthentique.journal@gmail.com','Lien Twitter copié !')" src="img/-content-copy_90004.png" class="icon">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h1>
+                    Sources :
+                </h1>
+                <table class="source">
+                    <tr>
+                        <td>
+                            <img onclick="copier('https://ds1.static.rtbf.be/article/image/770x433/5/1/c/737ad0b7a161e8a9ba140e1c87577f72-1538727689.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="https://ds1.static.rtbf.be/article/image/770x433/5/1/c/737ad0b7a161e8a9ba140e1c87577f72-1538727689.jpg" src="img/FakeNews Mathilde Image/Couple.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('https://ds1.static.rtbf.be/article/image/770x433/5/1/c/737ad0b7a161e8a9ba140e1c87577f72-1538727689.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('http://madame.legorafi.fr/wp-content/uploads/2018/03/iStock-897806448-e1522330273477-800x600.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://madame.legorafi.fr/wp-content/uploads/2018/03/iStock-897806448-e1522330273477-800x600.jpg" src="img/FakeNews Mathilde Image/Enfant.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('http://madame.legorafi.fr/wp-content/uploads/2018/03/iStock-897806448-e1522330273477-800x600.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('https://www.numerama.com/content/uploads/2015/11/emmanuel-macron-1900.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="https://www.numerama.com/content/uploads/2015/11/emmanuel-macron-1900.jpg" src="img/FakeNews Mathilde Image/emmanuelmacron.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('https://www.numerama.com/content/uploads/2015/11/emmanuel-macron-1900.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-627003604-800x600.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-627003604-800x600.jpg" src="img/FakeNews Mathilde Image/Image S 1.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-627003604-800x600.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('http://www.sclance.com/pngs/hamburger-menu-icon-png/hamburger_menu_icon_png_631319.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://www.sclance.com/pngs/hamburger-menu-icon-png/hamburger_menu_icon_png_631319.jpg" src="img/menu.png" title="Copier le lien de l'image" class="img-source" onclick="image('http://www.sclance.com/pngs/hamburger-menu-icon-png/hamburger_menu_icon_png_631319.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('http://madame.legorafi.fr/wp-content/uploads/2018/02/iStock-843180616-e1518779336140-800x600.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://madame.legorafi.fr/wp-content/uploads/2018/02/iStock-843180616-e1518779336140-800x600.jpg" src="img/FakeNews Mathilde Image/Femme.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('http://madame.legorafi.fr/wp-content/uploads/2018/02/iStock-843180616-e1518779336140-800x600.jpg','yes')">
+                         </td>
+                         <td>
+                             <img onclick="copier('https://news.sen360.sn/uploads/2018/10/la-france-a-un-incroyable-talent-prend-un-nouveau-depart-1149491.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                             <img title="https://news.sen360.sn/uploads/2018/10/la-france-a-un-incroyable-talent-prend-un-nouveau-depart-1149491.jpg" src="img/La France a un Incroyable Talent.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('https://news.sen360.sn/uploads/2018/10/la-france-a-un-incroyable-talent-prend-un-nouveau-depart-1149491.jpg','yes')">
+                         </td>
+                         <td>
+                             <img onclick="copier('https://images-na.ssl-images-amazon.com/images/I/51VZn6cOkpL._SL1024_.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                             <img title="https://images-na.ssl-images-amazon.com/images/I/51VZn6cOkpL._SL1024_.jpg" src="img/Fauteuil Massant.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('https://images-na.ssl-images-amazon.com/images/I/51VZn6cOkpL._SL1024_.jpg','yes')">
+                         </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img onclick="copier('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-625414524-1024x683.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-625414524-1024x683.jpg" src="img/FakeNews Mathilde Image/image s 6.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-625414524-1024x683.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-626423174-682x1024.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-626423174-682x1024.jpg" src="img/FakeNews Mathilde Image/Image s 2.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-626423174-682x1024.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-481482802-683x1024.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-481482802-683x1024.jpg" src="img/FakeNews Mathilde Image/image s 5.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-481482802-683x1024.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-184655515-683x1024.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-184655515-683x1024.jpg" src="img/FakeNews Mathilde Image/images 3.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-184655515-683x1024.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-845745610-1024x768.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-845745610-1024x768.jpg" src="img/FakeNews Mathilde Image/image s 4.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('http://madame.legorafi.fr/wp-content/uploads/2017/12/iStock-845745610-1024x768.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('https://img.bfmtv.com/c/1256/708/08ea/f559790ce2b91c29f55080572c83.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="https://img.bfmtv.com/c/1256/708/08ea/f559790ce2b91c29f55080572c83.jpg" src="img/trump1.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('https://img.bfmtv.com/c/1256/708/08ea/f559790ce2b91c29f55080572c83.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('https://i1.wp.com/actu17.fr/wp-content/uploads/2018/11/60C046DD-A558-4CA6-AAAA-19B67B667F74-e1541790844423.jpeg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="https://i1.wp.com/actu17.fr/wp-content/uploads/2018/11/60C046DD-A558-4CA6-AAAA-19B67B667F74-e1541790844423.jpeg" src="img/police.png" title="Copier le lien de l'image" class="img-source" onclick="image('https://i1.wp.com/actu17.fr/wp-content/uploads/2018/11/60C046DD-A558-4CA6-AAAA-19B67B667F74-e1541790844423.jpeg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('https://2019bonneannee.com/wp-content/uploads/bonne-ann%C3%A9e-2019.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="https://2019bonneannee.com/wp-content/uploads/bonne-ann%C3%A9e-2019.jpg" src="img/bonne-annee-2019.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('https://2019bonneannee.com/wp-content/uploads/bonne-ann%C3%A9e-2019.jpg','yes')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img onclick="copier('https://img.bfmtv.com/c/1000/600/9d2/873a918143b8cb5299aa664ef2296.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="https://img.bfmtv.com/c/1000/600/9d2/873a918143b8cb5299aa664ef2296.jpg" src="img/trump2.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('https://img.bfmtv.com/c/1000/600/9d2/873a918143b8cb5299aa664ef2296.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('http://lyceejacquesmonod.eu/IMG/jpg/slide1.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="http://lyceejacquesmonod.eu/IMG/jpg/slide1.jpg" src="img/lycee_monod.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('http://lyceejacquesmonod.eu/IMG/jpg/slide1.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('https://tce-live2.s3.amazonaws.com/media/media/b3cae14d-fee2-4e29-b32b-565071796af7.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="https://tce-live2.s3.amazonaws.com/media/media/b3cae14d-fee2-4e29-b32b-565071796af7.jpg" src="img/high_school.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('https://tce-live2.s3.amazonaws.com/media/media/b3cae14d-fee2-4e29-b32b-565071796af7.jpg','yes')">
+                        </td>
+                        <td>
+                            <img onclick="copier('https://www.bioalaune.com/img/article/thumb/900x500/30857-7_idees_de_recettes_pour_une_raclette_originale.jpg','URL de l\'image copié !')" class="icon button-source" src="img/-content-copy_90004.png">
+                            <img title="https://www.bioalaune.com/img/article/thumb/900x500/30857-7_idees_de_recettes_pour_une_raclette_originale.jpg" src="img/Raclette.jpg" title="Copier le lien de l'image" class="img-source" onclick="image('https://www.bioalaune.com/img/article/thumb/900x500/30857-7_idees_de_recettes_pour_une_raclette_originale.jpg','yes')">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h1>
+                    Qui à fait quoi ?
+                </h1>
+                <h2>
+                    - Eva :
+                </h2>
+                <a href="index.html#frames?Fake%20news%202%20(Eva).html">Révélation sur le président : Donald Trump</a>
+                <br>
+                <a href="index.html#frames?Fake%20news%202.3%20(Eva).html">Un policier du XXème arrondissement finit toutes ses journées de travail à 20H!</a>
+                <br>
+                <a href="index.html#frames?Fake%20news%202.2%20(Eva).html">La proviseure d'un lycée refuse que des élèves boivent de l'eau !</a>
+                <br>
+                <a href="index.html#frames?Fake%20News%202.4%20(Eva).html">Un historien découvre que Shakespeare n'a jamais écrit Roméo et Juliette!</a>
+            </div>
+            <div>
+                <h2>
+                    - Mathilde :
+                </h2>
+                <a href="index.html#frames?Fake%20News%201.5%20(dieu).html">Le cabinet dEmmanuel Macron repeint en rose</a>
+                <br>
+                <a href="index.html#frames?Fake%20News%201%20(DIEU).html">5 beaux sapins de Noël qui vous feront oublier la déforestation</a>
+                <br>
+                <a href="index.html#frames?Fake%20news%201.3%20(dieu).html">5 prénoms à donner à votre petit copain si il s'appelle Corentin</a>
+                <br>
+                <a href="index.html#frames?Fake%20News%201.4%20(toujours%20dieu).html">7 trucs vachements plus cool que la maternité</a>
+                <br>
+                <a href="index.html#frames?Fake%20News%201.2%20(Dieu).html">Mon enfant ne sais même pas faire un bilan comptable</a>
+            </div>
+            <div>
+                <h2>
+                    - Clément :
+                </h2>
+                <a href="index.html#frames?Fake%20news%203%20Clément.html">Des prestations très spéciales</a>
+                <br>
+                <a href="index.html#frames?Fake%20news%203.2%20Clément.html">Quelques infos pour l'année 2019</a>
+                <br>
+                <a href="index.html#frames?Fake%20news%203.1%20Clément.html">Du confort dans les lycées</a>
+            </div>
+            <div>
+                <h2>
+                    - Alban :
+                </h2>
+                <a href="index.html">La page d'accueil</a>
+                <br>
+                <a href="index.html#infos">Mentions légales / Informations</a>
+            </div>
+        </div>
+
+
+<!--Galerie-->
+
+        <div id="galerie" style="display:none">
+            <div class="voile-noir" id="voile-noir" onclick="image('','no')"></div>
+            <div class="div-image">
+                <img src="img/checkmark.png" class="quitter" onclick="image('','no')">
+                <div id="image">
+                    <img src="img/high_school.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+<!--Pied de page-->
+
+        <div class="pied">
+            <img src="img/Copyright.svg" class="copyright">
+            Copyright Mathilde, Clément, Eva et Alban
+            <br>
+            <a href="#infos" onclick="infos()">Mentions légales</a>
+        </div>
+    </body>
+    <script>
+    </script>
+</html>
